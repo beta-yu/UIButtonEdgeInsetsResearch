@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56FFC37FA1B6AB565F0A542B /* Pods_UIButtonEdgeInsetsResearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5525C6D418AB1FBFF6957B13 /* Pods_UIButtonEdgeInsetsResearch.framework */; };
 		7B07B83223D6E91F000A0A16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B83123D6E91F000A0A16 /* AppDelegate.m */; };
 		7B07B83523D6E91F000A0A16 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B83423D6E91F000A0A16 /* SceneDelegate.m */; };
 		7B07B83823D6E91F000A0A16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B83723D6E91F000A0A16 /* ViewController.m */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA5E48EE180D55795FE178A /* Pods-UIButtonEdgeInsetsResearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonEdgeInsetsResearch.release.xcconfig"; path = "Target Support Files/Pods-UIButtonEdgeInsetsResearch/Pods-UIButtonEdgeInsetsResearch.release.xcconfig"; sourceTree = "<group>"; };
+		5525C6D418AB1FBFF6957B13 /* Pods_UIButtonEdgeInsetsResearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIButtonEdgeInsetsResearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		565932EADFD2DA069581DD38 /* Pods-UIButtonEdgeInsetsResearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonEdgeInsetsResearch.debug.xcconfig"; path = "Target Support Files/Pods-UIButtonEdgeInsetsResearch/Pods-UIButtonEdgeInsetsResearch.debug.xcconfig"; sourceTree = "<group>"; };
 		7B07B82D23D6E91F000A0A16 /* UIButtonEdgeInsetsResearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIButtonEdgeInsetsResearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B07B83023D6E91F000A0A16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B07B83123D6E91F000A0A16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56FFC37FA1B6AB565F0A542B /* Pods_UIButtonEdgeInsetsResearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				7B07B82F23D6E91F000A0A16 /* UIButtonEdgeInsetsResearch */,
 				7B07B82E23D6E91F000A0A16 /* Products */,
+				DE388E9CAB28B9EC429FA58A /* Pods */,
+				E885F6E0192A4C65DB4AF9FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,24 @@
 			path = UIButtonEdgeInsetsResearch;
 			sourceTree = "<group>";
 		};
+		DE388E9CAB28B9EC429FA58A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				565932EADFD2DA069581DD38 /* Pods-UIButtonEdgeInsetsResearch.debug.xcconfig */,
+				4FA5E48EE180D55795FE178A /* Pods-UIButtonEdgeInsetsResearch.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E885F6E0192A4C65DB4AF9FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5525C6D418AB1FBFF6957B13 /* Pods_UIButtonEdgeInsetsResearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B07B84623D6E921000A0A16 /* Build configuration list for PBXNativeTarget "UIButtonEdgeInsetsResearch" */;
 			buildPhases = (
+				90B8FE0A434C2DDB6FA1ABF9 /* [CP] Check Pods Manifest.lock */,
 				7B07B82923D6E91F000A0A16 /* Sources */,
 				7B07B82A23D6E91F000A0A16 /* Frameworks */,
 				7B07B82B23D6E91F000A0A16 /* Resources */,
+				23EDDEAB28A8E77C961FDC65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23EDDEAB28A8E77C961FDC65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIButtonEdgeInsetsResearch/Pods-UIButtonEdgeInsetsResearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIButtonEdgeInsetsResearch/Pods-UIButtonEdgeInsetsResearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIButtonEdgeInsetsResearch/Pods-UIButtonEdgeInsetsResearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90B8FE0A434C2DDB6FA1ABF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIButtonEdgeInsetsResearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B07B82923D6E91F000A0A16 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		7B07B84723D6E921000A0A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565932EADFD2DA069581DD38 /* Pods-UIButtonEdgeInsetsResearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		7B07B84823D6E921000A0A16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA5E48EE180D55795FE178A /* Pods-UIButtonEdgeInsetsResearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

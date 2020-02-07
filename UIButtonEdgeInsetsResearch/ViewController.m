@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Masonry.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,22 @@
     //不应该是加与不加对高度没有影响吗？
     [self.button sizeToFit];
     self.button.center = self.view.center;
+    
+    UIView *redDot = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 8)];
+    redDot.layer.cornerRadius = 4;
+    redDot.backgroundColor = [UIColor redColor];
+    
     [self.view addSubview:self.button];
+    [self.view addSubview:redDot];
+    
+    CGFloat top = [self.button convertPoint:self.button.titleLabel.frame.origin toView:self.view].y;
+    NSLog(@"%f", top);
+    
+    [redDot mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.view.mas_top).offset(top+4);
+        make.leading.mas_equalTo(self.button.mas_trailing).offset(-(self.button.contentEdgeInsets.right + 2));
+        make.width.height.mas_equalTo(8);
+    }];
 }
 
 @end
